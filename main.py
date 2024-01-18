@@ -1,3 +1,5 @@
 import osszegzes
+import eldontes
 
-print(osszegzes.osszegzo())
+# print(osszegzes.osszegzo())
+eldontes.szamitas()
