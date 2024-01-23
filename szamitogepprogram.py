@@ -12,12 +12,14 @@ for i in range(len(szamitogepek)):
     ram = szamitogepek[i].ram
     print(f"{oprsz} ({ram})")
 
+# összegzés tétel
 print("Átlag: ", end="")
 gyujto = 0
 for i in range(len(szamitogepek)):
     gyujto += szamitogepek[i].ram
 print(f"{round(gyujto/len(szamitogepek),3)}")
 
+# maximum kiválasztás tétel
 print("Legtöbb ramot tartalmazó oprendszer: ", end="")
 index = 0
 for i in range(len(szamitogepek)):
@@ -25,3 +27,26 @@ for i in range(len(szamitogepek)):
         index = i
 oprsz = szamitogepek[index].oprsz
 print(f"{oprsz}")
+
+# megszámlálás tétel
+print(f"Hány Windows-os gépünk van?", end="")
+windows = 0
+for i in range(len(szamitogepek)):
+    if szamitogepek[i].oprsz == "win":
+        windows += 1
+print(f"\t {windows} db ilyen gépünk van!")
+
+
+# eldöntés tétel
+vizsgalt_ram = 16
+print(f"Van-e {vizsgalt_ram} GB-nál nagyobb windows?\t", end="")
+van = False
+for i in range(len(szamitogepek)):
+    if szamitogepek[i].ram > vizsgalt_ram and szamitogepek[i].oprsz == "win":
+        van = True
+if van == True:
+    print(f"Van ilyen gép!")
+else:
+    print("Nincs ilyen gép!")
+
+
