@@ -16,7 +16,7 @@ def szamitas():
     else:
         print('Nem prím')
 
-def eldontes_tetel():
+def kivalasztas():
     prim = False
     n = 9999
     while prim == False:

@@ -2,10 +2,11 @@
 import eldontes
 import osztoi
 import szamitogepprogrammetodusokkal
+import linearis
 
 # print(osszegzes.osszegzo())
 # eldontes.szamitas()
-eldontes.eldontes_tetel()
+# eldontes.kivalasztas()
 # szamitogepek = szamitogepprogrammetodusokkal.peldanyositas()
 # szamitogepprogrammetodusokkal.lista_kiiras(szamitogepek)
 # szamitogepprogrammetodusokkal.eldontes(szamitogepek)
@@ -14,3 +15,4 @@ eldontes.eldontes_tetel()
 # szamitogepprogrammetodusokkal.megszamlalas(szamitogepek)
 
 # print(osztoi.osztok(10003))
+linearis.kereses()
