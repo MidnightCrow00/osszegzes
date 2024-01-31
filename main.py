@@ -3,6 +3,7 @@ import eldontes
 import osztoi
 import szamitogepprogrammetodusokkal
 import linearis
+import megszamlalas_tetel
 
 # print(osszegzes.osszegzo())
 # eldontes.szamitas()
@@ -15,4 +16,6 @@ import linearis
 # szamitogepprogrammetodusokkal.megszamlalas(szamitogepek)
 
 # print(osztoi.osztok(10003))
-linearis.kereses()
+# linearis.kereses()
+# print(megszamlalas_tetel.megszamlalas())
+megszamlalas_tetel.min_kivalasztas()
